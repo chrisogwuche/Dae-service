@@ -1,0 +1,8 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: product-service
+#          uri: lb://product
+#          predicates:
+#            - Path=/red/{segment},/blue/{segment}
